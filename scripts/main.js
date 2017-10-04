@@ -188,7 +188,7 @@ $(document).ready(function() {
       $(".status").html(wind +'\xa0\xa0'+ humidity +'\xa0\xa0'+ precipitation);
       //
       
-      $("box").css(
+      $("xbox").css(
         "background-image",
         "url(" + iconObjects[weatherStatus] + ")"
       ); /* if weatherStatus==="Clear" and will select an object's property from iconObjects*/
