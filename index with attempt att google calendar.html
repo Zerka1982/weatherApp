@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Date and time conversion</title>
+    <link href="https://addtocalendar.com/atc/1.5/atc-style-blue.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" href="datepicker/datepicker.min.css">
+    <link rel="stylesheet" href="timepicker/jquery.timepicker.min.css">
+    <link type="text/css" href="css/jquery.icalendar.css" rel="stylesheet"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="datepicker/datepicker.min.js"></script>
+    <script src="timepicker/jquery.timepicker.min.js"></script>
+    <script src="scripts/moment.js"></script>
+    <script src="scripts/moment-timezone.min.js"></script>
+    <script src="scripts/moment-timezone-with-data.min.js"></script>
+    <script src="scripts/jstz.main.js"></script>
+    <script src="scripts/date_and_time.js"></script>
+	<script src="scripts/jquery.icalendar.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="icon" type="image/x-icon" href="http://favicon-generator.in/uploads/7eba5642ed19c1b1053bf5f9eb73a7ad/favicon-32x32.png" src="images/favicon.ico">
+  </head>
+  <body>
+	<div class="top">
+		<div class="cover">
+		
+	        <!-- Local place, date, and time -->
+			<div class="top-inputs">
+				<div class="form-group">
+					<input id="localPlaceSearch" type="text" name="" placeholder='Your location&hellip;'>
+				</div>
+
+				<div class="form-group">
+            		<div class="leftInput">    
+      					<input id='localDateInput' type='text' class='datepicker localInput' data-toggle='datepicker' placeholder='yyyy-mm-dd'/>
+            		</div>
+      
+            		<div class="rightInput"> 
+      					<input id='localTimeInput' type='text' class='timepicker localInput' placeholder='hh:mm'/>
+            		</div>
+          		</div>
+			</div>
+		
+        	<!-- Remote place, date, and time -->
+      		<div class="bottom-inputs">
+          		<div class="form-group">
+	      			<input id="remotePlaceSearch" type="text" name="location" id="location" placeholder='Remote location&hellip;'>
+	          	</div>
+
+	        	<div class="form-group">
+	          		<div class="leftInput">  
+	      				<input id='remoteDateInput' type='text' class='datepicker remoteInput' data-toggle='datepicker' placeholder='yyyy-mm-dd' value=''/>
+	          		</div>
+		          	<div class="rightInput"> 
+		      			<input id='remoteTimeInput' type='text' class='timepicker remoteInput' placeholder='hh:mm' value='' />
+		          	</div>
+				</div>
+			</div>
+
+			<!-- Calendar icon -->
+		    <div class="calendar">
+				<script type="text/javascript">(function () {
+		            if (window.addtocalendar)if(typeof window.addtocalendar.start == "function")return;
+		            if (window.ifaddtocalendar == undefined) { window.ifaddtocalendar = 1;
+		                var d = document, s = d.createElement('script'), g = 'getElementsByTagName';
+		                s.type = 'text/javascript';s.charset = 'UTF-8';s.async = true;
+		                s.src = ('https:' == window.location.protocol ? 'https' : 'http')+'://addtocalendar.com/atc/1.5/atc.min.js';
+		                var h = d[g]('body')[0];h.appendChild(s); }})();
+		    	</script>
+
+				<!-- Event data -->
+			    <span class="addtocalendar atc-style-blue">
+			        <var class="atc_event">
+			            <var class="atc_date_start">2017-09-28 15:50:02</var>
+			            <var class="atc_date_end">2017-09-30 20:00:00</var>	
+			            <var class="atc_timezone">Europe/Stockholm</var>
+			            <var class="atc_title">Star Wars Day Party</var>
+			            <var class="atc_description">May the force be with you</var>
+			            <var class="atc_location">Tatooine</var>
+			            <var class="atc_organizer">Luke Skywalker</var>
+			            <var class="atc_organizer_email">luke@starwars.com</var>
+			        </var>
+				</span>
+			</div>
+
+	    </div>
+
+		<div class="gb_logo">
+			<a href="https://globuzzer.mn.co/"><img class="icon" src="images/gb_logo.png" width="70" height="70"></a>
+	    </div>
+      
+	</div>
+
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMQkiW65aW0trfzj7nvECxI4b7ajXAs7I&libraries=places"></script>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Clock Task</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <link rel="stylesheet" type="text/css" href="css/clock.css">
+        <link rel="stylesheet" type="text/css" href="css/menu-style.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="scripts/main.js"></script>
+        <script src="scripts/wow.min.js"></script>
+    </head>
+    <body class="weather-background">
+        
+              <div class="box">
+        <!--id="status"-->
+        <!--Icon-->
+        <div class="weather-icon"></div>
+        <!--Location-->
+        <div class="location"><i class="fa fa-cog fa-spin "></i></div>
+
+        <!--Weather status and temperature-->
+       <div class="temperature">
+        <p class="temp"></p>
+        <p class="min-max-Temp"></p>
+        </div>
+
+
+
+        <p class="feelsLike"></p>
+
+        <!-- Wind, Humidity, Precipitation...-->
+        <p class="status"></p>
+
+        <div class="comingTemperature">
+            <div class="time1"></div>
+            <div class="time2"></div>
+            <div class="time3"></div>
+            <div class="time4"></div>
+        </div>
+      </div>
+
+      <div class="gb_logo wow fadeInUp" data-wow-delay="1s" id="gb_logo">
+            <a href="https://globuzzer.mn.co/" target="_blank">
+                <div class="clock">
+                    <div class="minute-hand"></div>
+                    <div class="hour-hand"></div>
+                    <div class="second-hand"></div>
+                    <div class="pin"></div>
+                </div>
+            </a>
+            <p class="hide wow zoomIn"  data-wow-iteration="1" data-wow-duration="3s" id="hideGlob" style="">Powered by Globuzzer the social network for travelers</p>
+    </div>
+            
+          <div class="anchor-links-wrapper anchors-is-visible">
+        <div class="anchor-item active">
+            <div class="anchor-item-inner">
+                <a href="index.html" class="anchor-link"><img id="icons-img1" src="images/icons/calendar-icon.png">Time zone</a>
+            </div>
+        </div>
+        <div class="anchor-item">
+            <div class="anchor-item-inner">
+                <a href="#" class="anchor-link"><img  id="icons-img2" id="icons-img2" src="images/icons/weather-icon.png">Weather</a>
+            </div>
+        </div>
+        
+    </div>              
+    <script>
+document.getElementById("gb_logo").onclick = function() {mouseClick()};
+document.getElementById("gb_logo").onmouseover = function() {mouseOver()};
+document.getElementById("gb_logo").onmouseout = function() {mouseOut()};
+
+function mouseClick() {
+    document.getElementById("hideGlob").style.display = "none";
+}
+
+function mouseOver() {
+    document.getElementById("hideGlob").style.display = "block";
+}
+
+function mouseOut() {
+    document.getElementById("hideGlob").style.display = "none";
+}
+</script>
+    <script>
+         wow = new WOW(
+                      {
+                      boxClass:     'wow',      // default
+                      animateClass: 'animated', // default
+                      offset:       0,          // default
+                      mobile:       true,       // default
+                      live:         true        // default
+                    }
+                    )
+                    wow.init();
+    </script>
+        
+    </body>
+</html>
