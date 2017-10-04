@@ -187,6 +187,7 @@ $(document).ready(function() {
       });
       $(".status").html(wind +'\xa0\xa0'+ humidity +'\xa0\xa0'+ precipitation);
       //
+      
       $("box").css(
         "background-image",
         "url(" + iconObjects[weatherStatus] + ")"
