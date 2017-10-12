@@ -54,7 +54,7 @@ $(document).ready(function() {
     var longitude = position.coords.longitude;
     var key = "63c2f3c72bac49c181d95500170310";
     var Api =
-      "http://api.apixu.com/v1/forecast.json?key=" +
+      "https://api.apixu.com/v1/forecast.json?key=" +
       key +
       "&q=" +
       latitude +
@@ -62,12 +62,12 @@ $(document).ready(function() {
       longitude +
       "";
     $.getJSON(Api, function(json) {
-      var icon = "http:" + json.forecast.forecastday["0"].day.condition.icon;
+      var icon = "https:" + json.forecast.forecastday["0"].day.condition.icon;
       
-      var icon1 = "http:" + json.forecast.forecastday["0"].hour["6"].condition.icon;
-      var icon2 = "http:" + json.forecast.forecastday["0"].hour["12"].condition.icon;
-      var icon3 = "http:" + json.forecast.forecastday["0"].hour["18"].condition.icon;
-      var icon4 = "http:" + json.forecast.forecastday["0"].hour["0"].condition.icon;
+      var icon1 = "https:" + json.forecast.forecastday["0"].hour["6"].condition.icon;
+      var icon2 = "https:" + json.forecast.forecastday["0"].hour["12"].condition.icon;
+      var icon3 = "https:" + json.forecast.forecastday["0"].hour["18"].condition.icon;
+      var icon4 = "https:" + json.forecast.forecastday["0"].hour["0"].condition.icon;
 
       var weatherStatus = json.current.condition.text;
       var name = json.location.name;
